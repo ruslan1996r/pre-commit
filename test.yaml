@@ -7,8 +7,8 @@
       - perl
       - pascal
 - tabitha:
-    name: Tabitha Bitumen
-    job Developer
+    name Tabitha Bitumen
+    job: Developer
     skills:
       - lisp
       - fortran
