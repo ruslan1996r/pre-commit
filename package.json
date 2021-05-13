@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "yaml": "yamllint test.yaml"
+    "yaml": "yamllint ."
   },
   "husky": {
     "hooks": {
