@@ -6,10 +6,10 @@
       - python
       - perl
       - pascal
-- tabitha:
+- tabitha
     name: Tabitha Bitumen
     job: Developer
-    skills
+    skills:
       - lisp
       - fortran
       - erlang
