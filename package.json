@@ -15,7 +15,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,md,yaml}": [
+    "*.{yaml}": [
       "prettier --single-quote --write",
       "git add",
       "npm run yaml"
