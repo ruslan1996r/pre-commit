@@ -21,12 +21,9 @@
 		}
 	},
 	"lint-staged": {
-		"*.{yaml,json}": [
-			"npm run yaml",
-			"yamllint -c .yamllint.yaml *.yaml",
-			"git add"
-		]
+		"*.{yaml,json}": [ "npm run yaml", "yamllint -c .yamllint.yaml *.yaml", "git add" ]
 	},
+	"pre-commit": [ "yaml" ],
 	"devDependencies": {
 		"babel-eslint": "^10.0.1",
 		"eslint": "^5.15.3",
