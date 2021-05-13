@@ -2,11 +2,11 @@
 - martin:
     name: Martin D'vloper
     job: Developer
-    skills:
+    skills
       - python
       - perl
       - pascal
-- tabitha
+- tabitha:
     name: Tabitha Bitumen
     job: Developer
     skills:
