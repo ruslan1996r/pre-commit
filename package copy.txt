@@ -44,3 +44,13 @@
 	"lint-staged": {
 		"*.{yaml,json}": [ "yaml" ]
 	},
+
+
+	//////////////////////////////
+	  "lint-staged": {
+    "*.yaml": [
+      "prettier --single-quote --write",
+      "git add",
+      "npm run yaml"
+    ]
+  },

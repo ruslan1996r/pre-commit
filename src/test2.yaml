@@ -1,6 +1,6 @@
 # Employee records
 - martin:
-    namMartin D'vloper
+    name: Martin D'vloper
     job: Developer
     skills:
       - python
