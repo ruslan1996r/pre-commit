@@ -21,8 +21,11 @@
 		}
 	},
 	"lint-staged": {
-		"*.{yaml,json}": [ "yaml" ]
-	},
+    "*.{js,json,css,md}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
 	"devDependencies": {
 		"babel-eslint": "^10.0.1",
 		"eslint": "^5.15.3",
