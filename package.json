@@ -23,7 +23,8 @@
 	"lint-staged": {
 		"*.{yaml,json}": [
 			"npm run yaml",
-			"yamllint -c .yamllint.yaml *.yaml"
+			"yamllint -c .yamllint.yaml *.yaml",
+			"git add"
 		]
 	},
 	"devDependencies": {
