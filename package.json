@@ -17,7 +17,8 @@
 	},
 	"lint-staged": {
 		"*.{yaml}": [
-      "npm run yaml"
+      "npm run yaml",
+      "yamllint -c .yamllint.yaml *.yaml"
     ]
 	}
 }
