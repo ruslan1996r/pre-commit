@@ -1,0 +1,24 @@
+name: Test
+
+# На этом этапе мы слушаем события, а именно: pull_request, а потом push в ветках снизу
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - main
+
+# Набор работ (функций), который будут выполнены
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm test
