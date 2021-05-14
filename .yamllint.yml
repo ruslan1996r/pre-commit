@@ -4,4 +4,14 @@ yaml-files:
   - '.yamllint'
 
 rules:
-  extends: default
+  comments:
+    level: warning
+  comments-indentation:
+    level: warning
+  document-end: disable
+  document-start:
+    level: warning
+  empty-values: disable
+  key-ordering: disable
+  octal-values: disable
+  quoted-strings: disable
