@@ -5,5 +5,5 @@ on: [push]
 jobs:
   lintAllTheThings:
     runs-on: ubuntu-latest
-    steps
+    steps:
     - uses
