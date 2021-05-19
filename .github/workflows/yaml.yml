@@ -4,7 +4,7 @@ on:
   pull_request:
     commit-ignore:
       - [skip ci]
-      - [ci skip]
+      # - [ci skip]
 
 jobs:
   lintAllTheThings:
