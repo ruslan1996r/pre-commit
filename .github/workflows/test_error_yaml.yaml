@@ -1,13 +1,18 @@
-name: Privet
+name: CI
 
 on: [push]
 
 jobs:
-  test_hello:
+    build:
+        runs-on: ubuntu-latest
 
-    runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
 
-      steps:
-        - uses: action/checkout@v1
-        - name: Print Hello
-        run: echo Hello, world!
+            - name: Run a one-line script
+              run: echo Hello, world!
+
+            - name: Run a multi-line script
+              run: |
+                  echo Add other actions to build,
+                  echo test, and deploy your project.
