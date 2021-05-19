@@ -1,6 +1,5 @@
 name: Yaml Lint
 
-#t
 on:
   push:
   pull_request:
