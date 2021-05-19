@@ -2,9 +2,9 @@ name: Yaml Lint
 
 on:
   pull_request:
-    commit-ignore:
-      # - [skip ci]
-      # - [ci skip]
+    # commit-ignore:
+    # - [skip ci]
+    # - [ci skip]
 
 jobs:
   lintAllTheThings:
