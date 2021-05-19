@@ -1,9 +1,0 @@
-name: Yaml Lint
-
-on: [push]
-
-jobs:
-  lintAllTheThings
-    runs-on: ubuntu-latest
-    steps:
-    - uses
