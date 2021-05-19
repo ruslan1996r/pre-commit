@@ -1,7 +1,7 @@
 name: Yaml Lint
 
 on:
-  [push]
+  [pull_request]
   # pull_request:
   # commit-ignore:
   # - [skip ci]
