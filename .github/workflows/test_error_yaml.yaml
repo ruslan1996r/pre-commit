@@ -1,7 +1,13 @@
-- martin:
-      name: Martin D'vloper
-      job: Developer
-      skills:
-          - python
-          - perl
-          - pascal
+name: CI
+
+on: [push]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Run a one-line script
+              run: echo Hello, world!
