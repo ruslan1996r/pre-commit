@@ -3,8 +3,8 @@ name: Yaml Lint
 on:
   push:
   pull_request:
-    # commit-ignore:
-    #   - [skip ci]
+    commit-ignore:
+      - [skip ci]
   # - [ci skip]
 
 jobs:
