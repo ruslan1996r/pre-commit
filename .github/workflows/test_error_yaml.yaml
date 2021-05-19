@@ -3,9 +3,11 @@ name: Privet
 on: [push]
 
 jobs:
+  test_hello:
+
     runs-on: ubuntu-latest
 
-    steps:
-        - uses: action/checkout@v1
-        - name: Print Hello
-    run: echo Hello, world!
+      steps:
+      - uses: action/checkout@v1
+      - name: Print Hello
+      	run: echo Hello, world!
