@@ -3,12 +3,12 @@ name: Test_Docker
 on:
     pull_request:
     push:
-        branches:
-            - main
-        tags-ignore:
-            - "*.*"
+        # branches:
+        #     - main
+        # tags-ignore:
+        #     - "*.*"
 
-concurrency: build
+# concurrency: build
 
 jobs:
     build:
@@ -17,6 +17,6 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Docker Final
-              #   if: github.ref == 'refs/heads/test'
+              if: github.ref == 'refs/heads/test'
               run: |
                   echo It works!!!
