@@ -19,4 +19,5 @@ jobs:
             - name: Docker Final
               if: github.ref == 'refs/heads/ignr'
               run: |
+                  npm run hello
                   echo It works!!!
