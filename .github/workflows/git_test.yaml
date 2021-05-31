@@ -17,6 +17,6 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Docker Final
-              if: github.ref == 'refs/heads/ignr'
+              if: github.ref == 'refs/heads/test'
               run: |
-                  npm run hello
+                  echo It works!!!
