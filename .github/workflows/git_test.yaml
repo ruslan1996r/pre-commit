@@ -17,6 +17,6 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Docker Final
-              if: github.ref == 'refs/heads/main'
+              if: github.ref == 'refs/heads/ignr'
               run: |
                   npm run hello
