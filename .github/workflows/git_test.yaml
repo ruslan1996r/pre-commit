@@ -1,0 +1,22 @@
+name: Test_Docker
+
+on:
+    pull_request:
+    push:
+        branches:
+            - main
+        tags-ignore:
+            - "*.*"
+
+concurrency: build
+
+jobs:
+    build:
+        runs-on: ubuntu-18.04
+        name: MyTestDocker
+        steps:
+            - uses: actions/checkout@v2
+            - name: Docker Final
+              if: github.ref == 'refs/heads/main'
+              run: |
+                  npm run hello
