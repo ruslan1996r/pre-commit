@@ -1,1 +1,6 @@
-console.log('test_main');
+function test() {
+    console.log('test_main');
+    return '123';
+}
+
+test();
