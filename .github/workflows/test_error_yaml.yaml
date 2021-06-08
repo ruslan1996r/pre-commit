@@ -11,6 +11,6 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Run a one-line script
-              run: |
-                  npm run setenv
-                  echo ${{ env.MY_ENV }}
+              run: npm run setenv
+            - name: get_env
+              run: echo ${{ env.MY_ENV }}
