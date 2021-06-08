@@ -13,11 +13,14 @@
 		"html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
 		"styles": "postcss src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
 		"build": "npm run html && npm run styles",
+
 		"deploy": "cd dist && rsync --archive --compress --delete . pepelsbey@pepelsbey.dev:/var/www/pepelsbey.dev/html/",
 		"yaml:lint": "yamllint **/\"*.{yaml,yml,.yamllint}\"",
 		"test:env": "cross-env MY_ENV=test_vova_putin node test_main.js",
 		"setenv": "MY_ENV=test_vova_putin",
-		"env:build": "node test_main.js"
+
+		"setcfg": "npm config set test='hello123 vova putin' && npm config get test",
+		"getcfg": "npm config get test"
 	},
 	"dependencies": {
 		"chalk": "^4.1.1",
