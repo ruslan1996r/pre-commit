@@ -16,7 +16,7 @@
 		"deploy": "cd dist && rsync --archive --compress --delete . pepelsbey@pepelsbey.dev:/var/www/pepelsbey.dev/html/",
 		"yaml:lint": "yamllint **/\"*.{yaml,yml,.yamllint}\"",
 		"test:env": "cross-env MY_ENV=test_vova_putin node test_main.js",
-		"setenv": "cross-env MY_ENV=test_vova_putin",
+		"setenv": "MY_ENV=test_vova_putin",
 		"env:build": "node test_main.js"
 	},
 	"dependencies": {
@@ -48,8 +48,6 @@
 		}
 	},
 	"lint-staged": {
-		"*.yaml": [
-			"npm run yaml:lint"
-		]
+		"*.yaml": [ "npm run yaml:lint" ]
 	}
 }
