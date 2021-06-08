@@ -9,11 +9,11 @@ jobs:
     get_env:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-              # - uses: actions/cache@v2
-              # - name: path
-              #   id: yarn-cache
-              run: echo ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            # - uses: actions/checkout@v2
+            # - uses: actions/cache@v2
+            # - name: path
+            #   id: yarn-cache
+            #   run: echo ${{ steps.yarn-cache-dir-path.outputs.dir }}
             # - name: Set secret
             #   run: npm config set my_env='hello123 vova putin'
             # - name: Get secret
