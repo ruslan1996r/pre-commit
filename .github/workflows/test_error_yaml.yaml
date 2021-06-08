@@ -1,17 +1,14 @@
 name: Test HELLO_WRLD!
 
 on: [push]
-# on:
-#     workflow_success:
-#     workflow: Test_Docker
+
+env:
+    my_env: "Hello!"
 
 jobs:
-    build:
-        needs: Test_Docker
+    get_env:
         runs-on: ubuntu-latest
-
         steps:
             - uses: actions/checkout@v2
-
             - name: Run a one-line script
-              run: echo Hello, world!
+              run: npm run setenv
