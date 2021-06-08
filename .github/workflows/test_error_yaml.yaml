@@ -1,12 +1,13 @@
 name: Test HELLO_WRLD!
 
-# on: [push]
-on:
-    workflow_success:
-    workflow: Test_Docker
+on: [push]
+# on:
+#     workflow_success:
+#     workflow: Test_Docker
 
 jobs:
     build:
+        needs: Test_Docker
         runs-on: ubuntu-latest
 
         steps:
