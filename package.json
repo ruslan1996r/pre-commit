@@ -44,8 +44,6 @@
 		}
 	},
 	"lint-staged": {
-		"*.yaml": [
-			"npm run yaml:lint"
-		]
+		"*.yaml": [ "npm run yaml:lint" ]
 	}
 }

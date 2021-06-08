@@ -1,6 +1,9 @@
 name: Test HELLO_WRLD!
 
-on: [push]
+# on: [push]
+on:
+    workflow_success:
+    workflow: Test_Docker
 
 jobs:
     build:
