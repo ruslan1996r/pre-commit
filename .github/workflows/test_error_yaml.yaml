@@ -2,8 +2,8 @@ name: Test HELLO_WRLD!
 
 on: [push]
 
-env:
-    my_env: "Hello!"
+# env:
+#     my_env: "Hello!"
 
 jobs:
     get_env:
