@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - name: Run a one-line script
-              run: npm run setenv
-            - name: get_env
-              run: echo ${{ env.MY_ENV }}
+            - name: Set secret
+              run: npm config set 'hello123 vova putin' 'my_env'
+            - name: Get secret
+              run: echo ${{ secrets.my_env }}
