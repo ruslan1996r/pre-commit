@@ -11,6 +11,6 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Set secret
-              run: npm config set 'hello123 vova putin' 'my_env'
+              run: npm config set my_env='hello123 vova putin'
             - name: Get secret
-              run: echo ${{ secrets.my_env }}
+              run: echo ${{ secrets }}
