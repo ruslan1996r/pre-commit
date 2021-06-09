@@ -18,6 +18,7 @@
 		"yaml:lint": "yamllint **/\"*.{yaml,yml,.yamllint}\"",
 		"test:env": "cross-env MY_ENV=test_vova_putin node test_main.js",
 		"setenv": "MY_ENV=test_vova_putin",
+		"getenv": "node test_main.js",
 
 		"setcfg": "npm config set test='hello123 vova putin' && npm config get test",
 		"getcfg": "npm config get test"
