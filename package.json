@@ -21,7 +21,10 @@
 		"getenv": "node test_main.js",
 
 		"setcfg": "npm config set test='hello123 vova putin' && npm config get test",
-		"getcfg": "npm config get test"
+		"getcfg": "npm config get test",
+
+		"my_test": "echo '_OUT_'",
+		"sha": "node index.js"
 	},
 	"dependencies": {
 		"chalk": "^4.1.1",
