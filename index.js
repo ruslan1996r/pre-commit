@@ -1,10 +1,8 @@
-const { exec } = require('child_process');
+const { execSync } = require('child_process');
 
-// const stdout = exec(`npm run my_test && echo ${process.env.npm_config_sha}`);
+const stdout = execSync(
+    `npm run my_test && echo ${process.env.npm_config_sha}`
+);
 
-// console.log('SHA: ', process.env.npm_config_sha);
-// console.log('stdout', Buffer.from(stdout).toString());
-// const stdout =
-exec('npm config set test=567576 && npm run get', (error, stdout, stderr) => {
-    console.log('stdout', stdout, 'buff: ', Buffer.from(stdout).toString());
-});
+console.log('SHA: ', process.env.npm_config_sha);
+console.log('stdout', Buffer.from(stdout).toString());
