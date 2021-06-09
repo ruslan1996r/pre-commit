@@ -5,10 +5,6 @@ const { exec } = require('child_process');
 // console.log('SHA: ', process.env.npm_config_sha);
 // console.log('stdout', Buffer.from(stdout).toString());
 // const stdout =
-exec('npm config set test=567576 && npm run get', function (
-    error,
-    stdout,
-    stderr
-) {
-    console.log('stdout', Buffer.from(stdout).toString());
+exec('npm config set test=567576 && npm run get', (error, stdout, stderr) => {
+    console.log('stdout', stdout, 'buff: ', Buffer.from(stdout).toString());
 });
