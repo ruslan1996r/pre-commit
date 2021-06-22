@@ -1,0 +1,20 @@
+name: TestBuild
+on:
+  pull_request:
+    types: [labeled, unlabeled, opened, synchronize, reopened]
+  push:
+    branches:
+      - main
+    tags-ignore:
+      - "*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: "Run hello"
+    if: "!startsWith(github.event.commits[0].message, 'chore:') && (contains( github.event.pull_request.labels.*.name, 'Build' ) || github.ref == 'refs/heads/main')"
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: GET_BUILD_HELLO
+        run: echo 'test_build_hello_msg'
